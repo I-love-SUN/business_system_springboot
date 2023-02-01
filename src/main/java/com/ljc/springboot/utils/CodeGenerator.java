@@ -11,7 +11,6 @@ public class CodeGenerator {
         generate();
 
     }
-
     private static void generate(){
         FastAutoGenerator.create("jdbc:mysql://localhost:3306/软件工程大作业?useSSL=false&useUnicode=true&characterEncoding=UTF-8", "root", "longjianchao3618")
                 .globalConfig(builder -> {
