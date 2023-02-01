@@ -1,0 +1,28 @@
+server:
+  port: 9099
+
+spring:
+  datasource:
+    #    druid:  test-while-idle=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/软件工程大作业?serverTimezone=GMT%2b8
+    username: root
+    password: longjianchao3618
+  servlet:
+    multipart:
+      max-request-size: 1024MB
+      max-file-size: 1024MB
+  jackson:
+    #  格式化返回时间 yyyy-MM-dd HH:mm:ss
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+#  druid.test-on-borrow=true
+mybatis:
+  mapper-locations : classpath:mapper/*.xml
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+#spring.web.resources.static-locations=  classpath:static/,classpath:/templates/
