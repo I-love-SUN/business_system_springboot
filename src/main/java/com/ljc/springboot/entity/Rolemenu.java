@@ -12,21 +12,18 @@ import lombok.Setter;
  * </p>
  *
  * @author baomidou
- * @since 2023-02-01
+ * @since 2023-02-02
  */
 @Getter
 @Setter
-  @ApiModel(value = "User对象", description = "")
-public class User implements Serializable {
+  @ApiModel(value = "Rolemenu对象", description = "")
+public class Rolemenu implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private Integer uId;
+      private Integer roleId;
 
-    private String uName;
+      private Integer menuId;
 
-    private Integer roleId;
-
-    private String password;
 
 }

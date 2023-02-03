@@ -2,6 +2,7 @@ package com.ljc.springboot.service;
 
 import com.ljc.springboot.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ljc.springboot.entity.dto.UserDTO;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IUserService extends IService<User> {
 
+    UserDTO login(UserDTO userDTO);
 }
